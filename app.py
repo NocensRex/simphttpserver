@@ -12,7 +12,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "text/html")
         self.end_headers()
         self.wfile.write(bytes("<html><head><title>whop whoop</title></head>", "utf-8"))
-        self.wfile.write(bytes("<p>Request: %s</p>" % self.path, "utf-8"))
+        self.wfile.write(bytes("<p>This is a test test</p>", "utf-8"))
         self.wfile.write(bytes("<body>", "utf-8"))
         self.wfile.write(bytes("<p>This is an example web server.</p>", "utf-8"))
         self.wfile.write(bytes("</body></html>", "utf-8"))
